@@ -1,0 +1,9 @@
+pandas
+numpy
+psutil
+GPUtil
+tqdm
+joblib
+scikit-learn
+gensim
+sentence-transformers

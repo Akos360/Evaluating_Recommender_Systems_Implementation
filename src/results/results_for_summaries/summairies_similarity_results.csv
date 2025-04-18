@@ -1,0 +1,277 @@
+algorithm,book_title,recommended_title,similarity
+1. TF-IDF + cosine,Advances in Discrete Differential Geometry,Finite Difference Computing With Pdes : a Modern Software Approach,0.149
+2. LSA,Advances in Discrete Differential Geometry,Finite Difference Computing With Pdes : a Modern Software Approach,0.484
+2. LSA,Advances in Discrete Differential Geometry,Advances in Proof-Theoretic Semantics (Volume 43.0),0.397
+2. LSA,Advances in Discrete Differential Geometry,Advances in Production Technology,0.349
+2. LSA,Advances in Discrete Differential Geometry,Interferometry and Synthesis in Radio Astronomy : Third Edition (Edition 3),0.263
+2. LSA,Advances in Discrete Differential Geometry,Information Infrastructures within European Health Care : Working with the Installed Base,0.248
+3. BoW,Advances in Discrete Differential Geometry,Finite Difference Computing With Pdes : a Modern Software Approach,0.132
+3. BoW,Advances in Discrete Differential Geometry,Advances in Production Technology,0.079
+3. BoW,Advances in Discrete Differential Geometry,Advances in Proof-Theoretic Semantics (Volume 43.0),0.067
+3. BoW,Advances in Discrete Differential Geometry,Advances in Wheat Genetics: From Genome to Field: Proceedings of the 12th International Wheat Genetics Symposium,0.062
+4. FastText,Advances in Discrete Differential Geometry,Cyborgs in Latin America,0.9900000095367432
+4. FastText,Advances in Discrete Differential Geometry,The Golden and Ghoulish Age of the Gibbet in Britain,0.9879999756813049
+4. FastText,Advances in Discrete Differential Geometry,Finance for Food : Towards New Agricultural and Rural Finance,0.9810000061988831
+4. FastText,Advances in Discrete Differential Geometry,"Micro-, Meso- and Macro-Dynamics of the Brain",0.9779999852180481
+4. FastText,Advances in Discrete Differential Geometry,Online Hate Speech in The European Union : a Discourse-Analytic Perspective,0.9750000238418579
+5. GloVe,Advances in Discrete Differential Geometry,Stem Cells in Neuroendocrinology,1.0
+5. GloVe,Advances in Discrete Differential Geometry,Housing Market Dynamics in Africa,1.0
+5. GloVe,Advances in Discrete Differential Geometry,Semiotics in Mathematics Education,1.0
+5. GloVe,Advances in Discrete Differential Geometry,Nicotinic Acetylcholine Receptor Signaling in Neuroprotection,1.0
+5. GloVe,Advances in Discrete Differential Geometry,Transitions in Mathematics Education,1.0
+6. BERT,Advances in Discrete Differential Geometry,Finite Difference Computing With Pdes : a Modern Software Approach,0.3160000145435333
+6. BERT,Advances in Discrete Differential Geometry,"Early Geometrical Thinking in the Environment of Patterns, Mosaics and Isometries",0.27399998903274536
+6. BERT,Advances in Discrete Differential Geometry,Finite Difference Computing with Exponential Decay Models (Volume 110.0),0.23600000143051147
+6. BERT,Advances in Discrete Differential Geometry,Collider Physics Within The Standard Model : a Primer,0.21400000154972076
+6. BERT,Advances in Discrete Differential Geometry,Programming for Computations - MATLAB/Octave (Volume 14.0),0.20399999618530273
+1. TF-IDF + cosine,Bats in the Anthropocene : Conservation of Bats in a Changing World,Biodiversity Conservation and Phylogenetic Systematics : Preserving Our Evolutionary Heritage in An Extinction Crisis (Volume 14.0),0.122
+1. TF-IDF + cosine,Bats in the Anthropocene : Conservation of Bats in a Changing World,Methods for Measuring Greenhouse Gas Balances and Evaluating Mitigation Options in Smallholder Agriculture,0.096
+1. TF-IDF + cosine,Bats in the Anthropocene : Conservation of Bats in a Changing World,Managing Protected Areas in Central and Eastern Europe Under Climate Change,0.09
+1. TF-IDF + cosine,Bats in the Anthropocene : Conservation of Bats in a Changing World,The Making of Islamic Heritage : Muslim Pasts and Heritage Presents,0.087
+1. TF-IDF + cosine,Bats in the Anthropocene : Conservation of Bats in a Changing World,Rewilding European Landscapes,0.085
+2. LSA,Bats in the Anthropocene : Conservation of Bats in a Changing World,Biodiversity Conservation and Phylogenetic Systematics : Preserving Our Evolutionary Heritage in An Extinction Crisis (Volume 14.0),0.45
+2. LSA,Bats in the Anthropocene : Conservation of Bats in a Changing World,Managing Protected Areas in Central and Eastern Europe Under Climate Change,0.343
+2. LSA,Bats in the Anthropocene : Conservation of Bats in a Changing World,Rewilding European Landscapes,0.313
+2. LSA,Bats in the Anthropocene : Conservation of Bats in a Changing World,"Communicating, Networking: Interacting: The International Year of Global Understanding - IYGU",0.285
+2. LSA,Bats in the Anthropocene : Conservation of Bats in a Changing World,The GEO Handbook on Biodiversity Observation Networks,0.276
+3. BoW,Bats in the Anthropocene : Conservation of Bats in a Changing World,Biodiversity Conservation and Phylogenetic Systematics : Preserving Our Evolutionary Heritage in An Extinction Crisis (Volume 14.0),0.155
+3. BoW,Bats in the Anthropocene : Conservation of Bats in a Changing World,Managing Protected Areas in Central and Eastern Europe Under Climate Change,0.135
+3. BoW,Bats in the Anthropocene : Conservation of Bats in a Changing World,Methods for Measuring Greenhouse Gas Balances and Evaluating Mitigation Options in Smallholder Agriculture,0.122
+3. BoW,Bats in the Anthropocene : Conservation of Bats in a Changing World,"Communicating, Networking: Interacting: The International Year of Global Understanding - IYGU",0.117
+3. BoW,Bats in the Anthropocene : Conservation of Bats in a Changing World,"Informatics in the Future : Proceedings of the 11th European Computer Science Summit (ECSS 2015), Vienna, October 2015",0.117
+4. FastText,Bats in the Anthropocene : Conservation of Bats in a Changing World,Instructional Scaffolding in STEM Education : Strategies and Efficacy Evidence,0.9990000128746033
+4. FastText,Bats in the Anthropocene : Conservation of Bats in a Changing World,Psychiatry and Decolonisation in Uganda,0.9990000128746033
+4. FastText,Bats in the Anthropocene : Conservation of Bats in a Changing World,The Dynamics of Opportunity in America : Evidence and Perspectives,0.9980000257492065
+4. FastText,Bats in the Anthropocene : Conservation of Bats in a Changing World,History and Cultural Memory in Neo-Victorian Fiction,0.9980000257492065
+4. FastText,Bats in the Anthropocene : Conservation of Bats in a Changing World,The Poetics and Politics of Alzheimer’s Disease Life-Writing,0.9980000257492065
+5. GloVe,Bats in the Anthropocene : Conservation of Bats in a Changing World,Managing Protected Areas in Central and Eastern Europe Under Climate Change,0.993
+5. GloVe,Bats in the Anthropocene : Conservation of Bats in a Changing World,Sustainable Living with Environmental Risks,0.992
+5. GloVe,Bats in the Anthropocene : Conservation of Bats in a Changing World,"Marginality : Addressing the Nexus of Poverty, Exclusion and Ecology",0.991
+5. GloVe,Bats in the Anthropocene : Conservation of Bats in a Changing World,Synchronized Factories : Latin America and the Caribbean in the Era of Global Value Chains,0.991
+5. GloVe,Bats in the Anthropocene : Conservation of Bats in a Changing World,Beyond the Limits to Growth : New Ideas for Sustainability from Japan,0.99
+6. BERT,Bats in the Anthropocene : Conservation of Bats in a Changing World,Biodiversity Conservation and Phylogenetic Systematics : Preserving Our Evolutionary Heritage in An Extinction Crisis (Volume 14.0),0.47200000286102295
+6. BERT,Bats in the Anthropocene : Conservation of Bats in a Changing World,Rewilding European Landscapes,0.42899999022483826
+6. BERT,Bats in the Anthropocene : Conservation of Bats in a Changing World,The GEO Handbook on Biodiversity Observation Networks,0.42800000309944153
+6. BERT,Bats in the Anthropocene : Conservation of Bats in a Changing World,"Nature-Based Solutions To Climate Change Adaptation in Urban Areas : Linkages Between Science, Policy and Practice",0.4090000092983246
+6. BERT,Bats in the Anthropocene : Conservation of Bats in a Changing World,The Ecological Scarcity Method for the European Union: A Volkswagen Research Initiative: Environmental Assessments,0.4009999930858612
+1. TF-IDF + cosine,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte","Protecting The Rights of People With Autism in The Fields of Education and Employment : international, European and National Perspectives",0.159
+1. TF-IDF + cosine,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte",Who Will Be The Next President? : a Guide To The U.S. Presidential Election System,0.14
+1. TF-IDF + cosine,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte",Elements of Robotics,0.131
+1. TF-IDF + cosine,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte","Rangeland Systems : Processes, Management and Challenges",0.12
+1. TF-IDF + cosine,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte",Societal Implications of Community-Oriented Policing and Technology,0.114
+2. LSA,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte",Elements of Robotics,0.435
+2. LSA,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte",Cognitive Supervision for Robot-Assisted Minimally Invasive Laser Surgery,0.42
+2. LSA,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte","Protecting The Rights of People With Autism in The Fields of Education and Employment : international, European and National Perspectives",0.379
+2. LSA,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte","Rangeland Systems : Processes, Management and Challenges",0.341
+2. LSA,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte",Who Will Be The Next President? : a Guide To The U.S. Presidential Election System,0.335
+3. BoW,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte",Report on Global Environmental Competitiveness (2013),0.194
+3. BoW,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte","Rangeland Systems : Processes, Management and Challenges",0.194
+3. BoW,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte",Reflections On The Fukushima Daiichi Nuclear Accident : Toward Social-Scientific Literacy and Engineering Resilience,0.189
+3. BoW,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte","Protecting The Rights of People With Autism in The Fields of Education and Employment : international, European and National Perspectives",0.182
+3. BoW,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte",Who Will Be The Next President? : a Guide To The U.S. Presidential Election System,0.179
+4. FastText,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte","Science and Technology Governance and Ethics : a Global Perspective From Europe, india and China",0.9929999709129333
+4. FastText,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte","X-Ray Contrast Media : Overview, Use and Pharmaceutical Aspects",0.9929999709129333
+4. FastText,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte",Society - Water - Technology : a Critical Appraisal of Major Water Engineering Projects,0.9909999966621399
+4. FastText,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte",Reflections On The Fukushima Daiichi Nuclear Accident : Toward Social-Scientific Literacy and Engineering Resilience,0.9900000095367432
+4. FastText,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte",Weißbuch Multiple Sklerose : Versorgungssituation in Deutschland,0.9900000095367432
+5. GloVe,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte","Error-Correction Coding and Decoding : Bounds, Codes, Decoders, Analysis and Applications",1.0
+5. GloVe,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte",The European Higher Education Area : Between Critical Reflections and Future Policies,0.997
+5. GloVe,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte",Safer Healthcare : Strategies For The Real World,0.99
+5. GloVe,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte","Seeing Ourselves Through Technology : How We Use Selfies, Blogs and Wearable Devices To See and Shape Ourselves",0.989
+5. GloVe,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte",Practical Economics : Economic Transformation and Government Reform in Georgia 2004–2012,0.989
+6. BERT,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte","Autonomous Driving : Technical, Legal and Social Aspects",0.49799999594688416
+6. BERT,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte",Foundations of Trusted Autonomy,0.453000009059906
+6. BERT,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte",Ethics and Civil Drones : European Policies and Proposals For The industry,0.414000004529953
+6. BERT,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte","Solving the Powertrain Puzzle : 10th Schaeffler Symposium April 3/4, 2014",0.38600000739097595
+6. BERT,"Autonomes Fahren : Technische, Rechtliche Und Gesellschaftliche Aspekte",Zukunft der Arbeit – Eine praxisnahe Betrachtung,0.375
+1. TF-IDF + cosine,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,Impact of Information Society Research in the Global South,0.409
+1. TF-IDF + cosine,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,Anti-fragile ICT Systems (Volume 1.0),0.401
+1. TF-IDF + cosine,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,Enabling Things to Talk,0.396
+1. TF-IDF + cosine,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,"Autonomous Control For a Reliable internet of Services : Methods, Models, Approaches, Techniques, Algorithms, and Tools",0.351
+1. TF-IDF + cosine,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,"Computer and information Sciences : 31St international Symposium, Iscis 2016, Kraków, Poland, October 27–28, 2016, Proceedings (Volume 659.0)",0.35
+2. LSA,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,Enabling Things to Talk,0.779
+2. LSA,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,Anti-fragile ICT Systems (Volume 1.0),0.734
+2. LSA,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,"Autonomous Control For a Reliable internet of Services : Methods, Models, Approaches, Techniques, Algorithms, and Tools",0.71
+2. LSA,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,"Computer and information Sciences : 31St international Symposium, Iscis 2016, Kraków, Poland, October 27–28, 2016, Proceedings (Volume 659.0)",0.678
+2. LSA,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,Impact of Information Society Research in the Global South,0.647
+3. BoW,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,Anti-fragile ICT Systems (Volume 1.0),0.574
+3. BoW,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,Enabling Things to Talk,0.543
+3. BoW,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,"Autonomous Control For a Reliable internet of Services : Methods, Models, Approaches, Techniques, Algorithms, and Tools",0.466
+3. BoW,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,"Computer and information Sciences : 31St international Symposium, Iscis 2016, Kraków, Poland, October 27–28, 2016, Proceedings (Volume 659.0)",0.463
+3. BoW,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,Impact of Information Society Research in the Global South,0.412
+4. FastText,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,"Computer and information Sciences : 31St international Symposium, Iscis 2016, Kraków, Poland, October 27–28, 2016, Proceedings (Volume 659.0)",0.9940000176429749
+4. FastText,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,"Communicating, Networking: Interacting: The International Year of Global Understanding - IYGU",0.9940000176429749
+4. FastText,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,"Error-Correction Coding and Decoding : Bounds, Codes, Decoders, Analysis and Applications",0.9929999709129333
+4. FastText,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,Methodological investigations in Agent-Based Modelling : With Applications For The Social Sciences,0.9919999837875366
+4. FastText,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,"Reality Lost : Markets of Attention, Misinformation and Manipulation",0.9900000095367432
+5. GloVe,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,"Protecting The Rights of People With Autism in The Fields of Education and Employment : international, European and National Perspectives",0.973
+5. GloVe,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,New Frontiers in Social Innovation Research,0.971
+5. GloVe,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,"Talent Development in European Higher Education : Honors Programs in The Benelux, Nordic and German-Speaking Countries",0.969
+5. GloVe,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,Uses of Technology in Upper Secondary Mathematics Education,0.969
+5. GloVe,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,Theories in and of Mathematics Education,0.969
+6. BERT,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,Anti-fragile ICT Systems (Volume 1.0),0.5960000157356262
+6. BERT,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,"Informatics in the Future : Proceedings of the 11th European Computer Science Summit (ECSS 2015), Vienna, October 2015",0.5099999904632568
+6. BERT,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,Enabling Things to Talk,0.5099999904632568
+6. BERT,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,Foundations of Trusted Autonomy,0.46799999475479126
+6. BERT,Cyber-Physical Systems of Systems: Foundations – A Conceptual Model and Some Derivations: The AMADEOS Legacy,"Autonomous Control For a Reliable internet of Services : Methods, Models, Approaches, Techniques, Algorithms, and Tools",0.4449999928474426
+1. TF-IDF + cosine,"Rangeland Systems : Processes, Management and Challenges",Report on Global Environmental Competitiveness (2013),0.31
+1. TF-IDF + cosine,"Rangeland Systems : Processes, Management and Challenges",Rewilding European Landscapes,0.29
+1. TF-IDF + cosine,"Rangeland Systems : Processes, Management and Challenges",Environmental Governance of the Baltic Sea (Volume 10.0),0.279
+1. TF-IDF + cosine,"Rangeland Systems : Processes, Management and Challenges",Ranaviruses : Lethal Pathogens of Ectothermic Vertebrates,0.234
+1. TF-IDF + cosine,"Rangeland Systems : Processes, Management and Challenges",Sustainable Living with Environmental Risks,0.231
+2. LSA,"Rangeland Systems : Processes, Management and Challenges",Report on Global Environmental Competitiveness (2013),0.56
+2. LSA,"Rangeland Systems : Processes, Management and Challenges",Rewilding European Landscapes,0.54
+2. LSA,"Rangeland Systems : Processes, Management and Challenges",Sustainable Living with Environmental Risks,0.538
+2. LSA,"Rangeland Systems : Processes, Management and Challenges","Earthquakes, Tsunamis and Nuclear Risks",0.513
+2. LSA,"Rangeland Systems : Processes, Management and Challenges",Environmental Governance of the Baltic Sea (Volume 10.0),0.494
+3. BoW,"Rangeland Systems : Processes, Management and Challenges",Report on Global Environmental Competitiveness (2013),0.467
+3. BoW,"Rangeland Systems : Processes, Management and Challenges",Environmental Governance of the Baltic Sea (Volume 10.0),0.447
+3. BoW,"Rangeland Systems : Processes, Management and Challenges","Earthquakes, Tsunamis and Nuclear Risks",0.422
+3. BoW,"Rangeland Systems : Processes, Management and Challenges",Rewilding European Landscapes,0.414
+3. BoW,"Rangeland Systems : Processes, Management and Challenges",Sustainable Living with Environmental Risks,0.393
+4. FastText,"Rangeland Systems : Processes, Management and Challenges",North Sea Region Climate Change Assessment,0.9959999918937683
+4. FastText,"Rangeland Systems : Processes, Management and Challenges",Governance For Drought Resilience : Land and Water Drought Management in Europe,0.9869999885559082
+4. FastText,"Rangeland Systems : Processes, Management and Challenges",Report on Global Environmental Competitiveness (2013),0.9869999885559082
+4. FastText,"Rangeland Systems : Processes, Management and Challenges",Rewilding European Landscapes,0.9850000143051147
+4. FastText,"Rangeland Systems : Processes, Management and Challenges",Climate Smart Agriculture : Building Resilience To Climate Change,0.9850000143051147
+5. GloVe,"Rangeland Systems : Processes, Management and Challenges",The Ecological Scarcity Method for the European Union: A Volkswagen Research Initiative: Environmental Assessments,0.95
+5. GloVe,"Rangeland Systems : Processes, Management and Challenges","Water Resource Systems Planning and Management : An introduction To Methods, Models, and Applications",0.938
+5. GloVe,"Rangeland Systems : Processes, Management and Challenges",The Great Mindshift : How a New Economic Paradigm and Sustainability Transformations Go Hand in Hand,0.92
+5. GloVe,"Rangeland Systems : Processes, Management and Challenges",Renewing Local Planning to Face Climate Change in the Tropics,0.906
+6. BERT,"Rangeland Systems : Processes, Management and Challenges",Rewilding European Landscapes,0.5109999775886536
+6. BERT,"Rangeland Systems : Processes, Management and Challenges",Managing Protected Areas in Central and Eastern Europe Under Climate Change,0.4580000042915344
+6. BERT,"Rangeland Systems : Processes, Management and Challenges",The GEO Handbook on Biodiversity Observation Networks,0.4449999928474426
+6. BERT,"Rangeland Systems : Processes, Management and Challenges","Water Resource Systems Planning and Management : An introduction To Methods, Models, and Applications",0.4359999895095825
+6. BERT,"Rangeland Systems : Processes, Management and Challenges","Nature-Based Solutions To Climate Change Adaptation in Urban Areas : Linkages Between Science, Policy and Practice",0.4180000126361847
+1. TF-IDF + cosine,Digitale Souveränität : Bürger | Unternehmen | Staat,Kundennutzen Durch Digitale Transformation : Business-Process-Management-Studie – Status Quo Und Erfolgsmuster,0.17
+1. TF-IDF + cosine,Digitale Souveränität : Bürger | Unternehmen | Staat,Prozessintelligenz : Business-Process-Management-Studie – Status Quo Und Erfolgsmuster,0.108
+1. TF-IDF + cosine,Digitale Souveränität : Bürger | Unternehmen | Staat,Zukunft der Arbeit – Eine praxisnahe Betrachtung,0.099
+1. TF-IDF + cosine,Digitale Souveränität : Bürger | Unternehmen | Staat,"Bildungsverläufe Von Der Einschulung Bis in Den Ersten Arbeitsmarkt : Theoretische Ansätze, Empirische Befunde Und Beispiele",0.095
+1. TF-IDF + cosine,Digitale Souveränität : Bürger | Unternehmen | Staat,Altern Im Wandel : Zwei Jahrzehnte Deutscher Alterssurvey (Deas),0.07
+2. LSA,Digitale Souveränität : Bürger | Unternehmen | Staat,Kundennutzen Durch Digitale Transformation : Business-Process-Management-Studie – Status Quo Und Erfolgsmuster,0.601
+2. LSA,Digitale Souveränität : Bürger | Unternehmen | Staat,Prozessintelligenz : Business-Process-Management-Studie – Status Quo Und Erfolgsmuster,0.552
+2. LSA,Digitale Souveränität : Bürger | Unternehmen | Staat,"Bildungsverläufe Von Der Einschulung Bis in Den Ersten Arbeitsmarkt : Theoretische Ansätze, Empirische Befunde Und Beispiele",0.547
+2. LSA,Digitale Souveränität : Bürger | Unternehmen | Staat,Zukunft der Arbeit – Eine praxisnahe Betrachtung,0.429
+2. LSA,Digitale Souveränität : Bürger | Unternehmen | Staat,Altern Im Wandel : Zwei Jahrzehnte Deutscher Alterssurvey (Deas),0.356
+3. BoW,Digitale Souveränität : Bürger | Unternehmen | Staat,Kundennutzen Durch Digitale Transformation : Business-Process-Management-Studie – Status Quo Und Erfolgsmuster,0.182
+3. BoW,Digitale Souveränität : Bürger | Unternehmen | Staat,"Bildungsverläufe Von Der Einschulung Bis in Den Ersten Arbeitsmarkt : Theoretische Ansätze, Empirische Befunde Und Beispiele",0.143
+3. BoW,Digitale Souveränität : Bürger | Unternehmen | Staat,Prozessintelligenz : Business-Process-Management-Studie – Status Quo Und Erfolgsmuster,0.12
+3. BoW,Digitale Souveränität : Bürger | Unternehmen | Staat,Zukunft der Arbeit – Eine praxisnahe Betrachtung,0.1
+3. BoW,Digitale Souveränität : Bürger | Unternehmen | Staat,"Hamburger Klimabericht – Wissen über Klima, Klimawandel und Auswirkungen in Hamburg und Norddeutschland",0.1
+4. FastText,Digitale Souveränität : Bürger | Unternehmen | Staat,Deutsch Als Zweitsprache : Alphabetisierung Für Jugendliche Und Junge Erwachsene,0.9929999709129333
+4. FastText,Digitale Souveränität : Bürger | Unternehmen | Staat,The Onlife Manifesto : Being Human in a Hyperconnected Era,0.9909999966621399
+4. FastText,Digitale Souveränität : Bürger | Unternehmen | Staat,Diseases of The Abdomen and Pelvis 2018-2021 : Diagnostic Imaging - Idkd Book,0.9890000224113464
+4. FastText,Digitale Souveränität : Bürger | Unternehmen | Staat,Aquaculture Perspective of Multi-Use Sites in The Open Ocean : The Untapped Potential For Marine Resources in The Anthropocene,0.9869999885559082
+4. FastText,Digitale Souveränität : Bürger | Unternehmen | Staat,Freiwilliges Engagement in Deutschland : Der Deutsche Freiwilligensurvey 2014,0.9869999885559082
+5. GloVe,Digitale Souveränität : Bürger | Unternehmen | Staat,Prozessintelligenz : Business-Process-Management-Studie – Status Quo Und Erfolgsmuster,0.722
+5. GloVe,Digitale Souveränität : Bürger | Unternehmen | Staat,Kundennutzen Durch Digitale Transformation : Business-Process-Management-Studie – Status Quo Und Erfolgsmuster,0.722
+5. GloVe,Digitale Souveränität : Bürger | Unternehmen | Staat,Junge Perspektiven Der Türkeiforschung in Deutschland : Band 1,0.712
+5. GloVe,Digitale Souveränität : Bürger | Unternehmen | Staat,Microfinance 3.0 : Reconciling Sustainability With Social Outreach and Responsible Delivery,0.691
+6. BERT,Digitale Souveränität : Bürger | Unternehmen | Staat,Digitalisierung : Bildung | Technik | innovation,0.5529999732971191
+6. BERT,Digitale Souveränität : Bürger | Unternehmen | Staat,Zukunft der Arbeit – Eine praxisnahe Betrachtung,0.5509999990463257
+6. BERT,Digitale Souveränität : Bürger | Unternehmen | Staat,Kundennutzen Durch Digitale Transformation : Business-Process-Management-Studie – Status Quo Und Erfolgsmuster,0.5130000114440918
+6. BERT,Digitale Souveränität : Bürger | Unternehmen | Staat,Digital Kenya : An Entrepreneurial Revolution in The Making,0.4699999988079071
+6. BERT,Digitale Souveränität : Bürger | Unternehmen | Staat,Altern Im Wandel : Zwei Jahrzehnte Deutscher Alterssurvey (Deas),0.4180000126361847
+1. TF-IDF + cosine,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",Assessment in Mathematics Education : Large-Scale Assessment and Classroom Assessment,0.286
+1. TF-IDF + cosine,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",Global Perspectives On Recognising Non-Formal and informal Learning : Why Recognition Matters (Volume 21.0),0.152
+1. TF-IDF + cosine,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",R.J. Rummel : An Assessment of His Many Contributions,0.127
+2. LSA,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",R.J. Rummel : An Assessment of His Many Contributions,0.741
+2. LSA,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",Assessment in Mathematics Education : Large-Scale Assessment and Classroom Assessment,0.537
+2. LSA,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",Global Perspectives On Recognising Non-Formal and informal Learning : Why Recognition Matters (Volume 21.0),0.464
+2. LSA,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",Advancing Culture of Living with Landslides: Volume 1 ISDR-ICL Sendai Partnerships 2015-2025 (Volume 1.0),0.325
+3. BoW,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",Assessment in Mathematics Education : Large-Scale Assessment and Classroom Assessment,0.334
+3. BoW,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",integrating Immigrants in Europe : Research-Policy Dialogues,0.272
+3. BoW,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",Global Perspectives On Recognising Non-Formal and informal Learning : Why Recognition Matters (Volume 21.0),0.222
+3. BoW,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",Satellite Earth Observations and Their Impact on Society and Policy,0.21
+3. BoW,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",Humanities World Report 2015,0.21
+4. FastText,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",The Ethics of Educational Healthcare Placements in Low and Middle income Countries : First Do No Harm?,0.9959999918937683
+4. FastText,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",Beyond Safety Training : Embedding Safety in Professional Skills,0.9919999837875366
+4. FastText,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets","Education and Skills For inclusive Growth, Green Jobs and The Greening of Economies in Asia : Case Study Summaries of india, indonesia, Sri Lanka and Viet Nam (Volume 27.0)",0.9909999966621399
+4. FastText,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",Complications and Quandaries in The Ict Sector : Standard Essential Patents and Competition Issues,0.9909999966621399
+4. FastText,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",AiREAS: Sustainocracy for a Healthy City: Phase 3: Civilian Participation – Including the Global Health Deal Proposition,0.9909999966621399
+5. GloVe,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",The Mathematics Education of Prospective Secondary Teachers Around the World,0.962
+5. GloVe,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",Tuberculosis in Adults and Children (Volume 2.0),0.96
+5. GloVe,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",Understanding Society and Natural Resources : Forging New Strands of Integration Across the Social Sciences,0.956
+5. GloVe,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",Evaluating Climate Change Action for Sustainable Development,0.956
+5. GloVe,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",Instructional Scaffolding in STEM Education : Strategies and Efficacy Evidence,0.956
+6. BERT,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",Assessment in Mathematics Education : Large-Scale Assessment and Classroom Assessment,0.46399998664855957
+6. BERT,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",Preparing for Life in a Digital Age : The IEA International Computer and Information Literacy Study International Report,0.46399998664855957
+6. BERT,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets","Talent Development in European Higher Education : Honors Programs in The Benelux, Nordic and German-Speaking Countries",0.38199999928474426
+6. BERT,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",Teaching Tolerance in a Globalized World,0.3790000081062317
+6. BERT,"Advancing Human Assessment : The Methodological, Psychological and Policy Contributions of Ets",Curriculum Reform in The European Schools : Towards a 21St Century Vision,0.3709999918937683
+1. TF-IDF + cosine,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings","Foundations of Software Science and Computation Structures : 21st International Conference, FOSSACS 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14–20, 2018. Proceedings",0.68
+1. TF-IDF + cosine,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings","Fundamental Approaches to Software Engineering : 21st International Conference, FASE 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings",0.672
+1. TF-IDF + cosine,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings","Programming Languages and Systems : 27th European Symposium on Programming, ESOP 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings",0.597
+2. LSA,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings","Foundations of Software Science and Computation Structures : 21st International Conference, FOSSACS 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14–20, 2018. Proceedings",0.961
+2. LSA,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings","Programming Languages and Systems : 27th European Symposium on Programming, ESOP 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings",0.949
+2. LSA,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings","Fundamental Approaches to Software Engineering : 21st International Conference, FASE 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings",0.918
+2. LSA,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings","Agile Processes in Software Engineering and Extreme Programming: 19th International Conference, XP 2018, Porto, Portugal, May 21–25, 2018, Proceedings (Volume 314.0)",0.466
+3. BoW,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings","Foundations of Software Science and Computation Structures : 21st International Conference, FOSSACS 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14–20, 2018. Proceedings",0.732
+3. BoW,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings","Fundamental Approaches to Software Engineering : 21st International Conference, FASE 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings",0.69
+3. BoW,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings","Programming Languages and Systems : 27th European Symposium on Programming, ESOP 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings",0.644
+3. BoW,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings","Agile Processes in Software Engineering and Extreme Programming: 19th International Conference, XP 2018, Porto, Portugal, May 21–25, 2018, Proceedings (Volume 314.0)",0.303
+4. FastText,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings","Programming Languages and Systems : 27th European Symposium on Programming, ESOP 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings",0.9990000128746033
+4. FastText,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings","Fundamental Approaches to Software Engineering : 21st International Conference, FASE 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings",0.9929999709129333
+4. FastText,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings","Foundations of Software Science and Computation Structures : 21st International Conference, FOSSACS 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14–20, 2018. Proceedings",0.9909999966621399
+4. FastText,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings",The Physics of the B Factories,0.9850000143051147
+4. FastText,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings",Research on an Improved QUIC Protocol MINQUIC,0.9700000286102295
+5. GloVe,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings","Programming Languages and Systems : 27th European Symposium on Programming, ESOP 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings",0.996
+5. GloVe,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings","Foundations of Software Science and Computation Structures : 21st International Conference, FOSSACS 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14–20, 2018. Proceedings",0.994
+5. GloVe,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings","Fundamental Approaches to Software Engineering : 21st International Conference, FASE 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings",0.993
+5. GloVe,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings",S-BPM in the Production Industry : A Stakeholder Approach,0.983
+5. GloVe,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings","Capital Punishment and the Criminal Corpse in Scotland, 1740–1834",0.981
+6. BERT,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings","Programming Languages and Systems : 27th European Symposium on Programming, ESOP 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings",0.5379999876022339
+6. BERT,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings","Open Source Systems : Towards Robust Practices 13Th Ifip Wg 2.13 international Conference, Oss 2017, Buenos Aires, Argentina, May 22-23, 2017, Proceedings",0.4909999966621399
+6. BERT,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings","Fundamental Approaches to Software Engineering : 21st International Conference, FASE 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings",0.4690000116825104
+6. BERT,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings","Security of Networks and Services in an All-Connected World: 11th IFIP WG 6.6 International Conference on Autonomous Infrastructure, Management, and Security, AIMS 2017, Zurich, Switzerland, July 10-13, 2017, Proceedings",0.4399999976158142
+6. BERT,"Principles of Security and Trust : 7th International Conference, POST 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings","Foundations of Software Science and Computation Structures : 21st International Conference, FOSSACS 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14–20, 2018. Proceedings",0.4300000071525574
+1. TF-IDF + cosine,Earth Observation Open Science and Innovation,Satellite Earth Observations and Their Impact on Society and Policy,0.308
+1. TF-IDF + cosine,Earth Observation Open Science and Innovation,"Big Data in Context : Legal, Social and Technological insights",0.288
+1. TF-IDF + cosine,Earth Observation Open Science and Innovation,Linked Open Data -- Creating Knowledge Out of Interlinked Data : Results of the LOD2 Project,0.214
+1. TF-IDF + cosine,Earth Observation Open Science and Innovation,Deliberative Public Engagement With Science : An Empirical investigation,0.18
+1. TF-IDF + cosine,Earth Observation Open Science and Innovation,"integration Processes and Policies in Europe : Contexts, Levels and Actors",0.179
+2. LSA,Earth Observation Open Science and Innovation,"Big Data in Context : Legal, Social and Technological insights",0.641
+2. LSA,Earth Observation Open Science and Innovation,Satellite Earth Observations and Their Impact on Society and Policy,0.561
+2. LSA,Earth Observation Open Science and Innovation,Linked Open Data -- Creating Knowledge Out of Interlinked Data : Results of the LOD2 Project,0.505
+2. LSA,Earth Observation Open Science and Innovation,Deliberative Public Engagement With Science : An Empirical investigation,0.429
+2. LSA,Earth Observation Open Science and Innovation,Nanoinformatics,0.421
+3. BoW,Earth Observation Open Science and Innovation,"Big Data in Context : Legal, Social and Technological insights",0.356
+3. BoW,Earth Observation Open Science and Innovation,"integration Processes and Policies in Europe : Contexts, Levels and Actors",0.316
+3. BoW,Earth Observation Open Science and Innovation,Deliberative Public Engagement With Science : An Empirical investigation,0.314
+3. BoW,Earth Observation Open Science and Innovation,Linked Open Data -- Creating Knowledge Out of Interlinked Data : Results of the LOD2 Project,0.312
+3. BoW,Earth Observation Open Science and Innovation,Satellite Earth Observations and Their Impact on Society and Policy,0.283
+4. FastText,Earth Observation Open Science and Innovation,"Autonomous Control For a Reliable internet of Services : Methods, Models, Approaches, Techniques, Algorithms, and Tools",0.9819999933242798
+4. FastText,Earth Observation Open Science and Innovation,Cognitive Supervision for Robot-Assisted Minimally Invasive Laser Surgery,0.9750000238418579
+4. FastText,Earth Observation Open Science and Innovation,"Supercomputing Frontiers : 4Th Asian Conference, Scfa 2018, Singapore, March 26-29, 2018, Proceedings",0.972000002861023
+4. FastText,Earth Observation Open Science and Innovation,"Think Big, Start Small: StreetScooter die e-mobile erfolgsstory: Innovationsprozesse radikal effizienter",0.9710000157356262
+4. FastText,Earth Observation Open Science and Innovation,"White-Collar Crime in The Shadow Economy : Lack of Detection, investigation and Conviction Compared To Social Security Fraud",0.9700000286102295
+5. GloVe,Earth Observation Open Science and Innovation,"Model-Based Demography : Essays On integrating Data, Technique and Theory",0.91
+5. GloVe,Earth Observation Open Science and Innovation,"Autonomous Control For a Reliable internet of Services : Methods, Models, Approaches, Techniques, Algorithms, and Tools",0.909
+5. GloVe,Earth Observation Open Science and Innovation,Tales of Research Misconduct : a Lacanian Diagnostics of integrity Challenges in Science Novels,0.908
+5. GloVe,Earth Observation Open Science and Innovation,"Security of Networks and Services in an All-Connected World: 11th IFIP WG 6.6 International Conference on Autonomous Infrastructure, Management, and Security, AIMS 2017, Zurich, Switzerland, July 10-13, 2017, Proceedings",0.907
+5. GloVe,Earth Observation Open Science and Innovation,Weather & Climate Services for the Energy Industry,0.902
+6. BERT,Earth Observation Open Science and Innovation,Satellite Earth Observations and Their Impact on Society and Policy,0.5040000081062317
+6. BERT,Earth Observation Open Science and Innovation,"Opening Science : The Evolving Guide on How the Internet is Changing Research, Collaboration and Scholarly Publishing",0.460999995470047
+6. BERT,Earth Observation Open Science and Innovation,"Big Data in Context : Legal, Social and Technological insights",0.4300000071525574
+6. BERT,Earth Observation Open Science and Innovation,Understanding Society and Natural Resources : Forging New Strands of Integration Across the Social Sciences,0.40799999237060547
+6. BERT,Earth Observation Open Science and Innovation,The Globalization of Science Curricula,0.3930000066757202
+1. TF-IDF + cosine,"Hamburger Klimabericht – Wissen über Klima, Klimawandel und Auswirkungen in Hamburg und Norddeutschland","Klimawandel in Deutschland : Entwicklung, Folgen, Risiken Und Perspektiven",0.299
+1. TF-IDF + cosine,"Hamburger Klimabericht – Wissen über Klima, Klimawandel und Auswirkungen in Hamburg und Norddeutschland","Bildungsverläufe Von Der Einschulung Bis in Den Ersten Arbeitsmarkt : Theoretische Ansätze, Empirische Befunde Und Beispiele",0.154
+1. TF-IDF + cosine,"Hamburger Klimabericht – Wissen über Klima, Klimawandel und Auswirkungen in Hamburg und Norddeutschland",Agenda-Setting Zwischen Parlament Und Medien : Normative Herleitung Und Empirische Untersuchung Am Beispiel Der Schweiz,0.126
+2. LSA,"Hamburger Klimabericht – Wissen über Klima, Klimawandel und Auswirkungen in Hamburg und Norddeutschland","Klimawandel in Deutschland : Entwicklung, Folgen, Risiken Und Perspektiven",0.8
+2. LSA,"Hamburger Klimabericht – Wissen über Klima, Klimawandel und Auswirkungen in Hamburg und Norddeutschland","Bildungsverläufe Von Der Einschulung Bis in Den Ersten Arbeitsmarkt : Theoretische Ansätze, Empirische Befunde Und Beispiele",0.679
+2. LSA,"Hamburger Klimabericht – Wissen über Klima, Klimawandel und Auswirkungen in Hamburg und Norddeutschland",Agenda-Setting Zwischen Parlament Und Medien : Normative Herleitung Und Empirische Untersuchung Am Beispiel Der Schweiz,0.518
+3. BoW,"Hamburger Klimabericht – Wissen über Klima, Klimawandel und Auswirkungen in Hamburg und Norddeutschland","Klimawandel in Deutschland : Entwicklung, Folgen, Risiken Und Perspektiven",0.338
+3. BoW,"Hamburger Klimabericht – Wissen über Klima, Klimawandel und Auswirkungen in Hamburg und Norddeutschland","Bildungsverläufe Von Der Einschulung Bis in Den Ersten Arbeitsmarkt : Theoretische Ansätze, Empirische Befunde Und Beispiele",0.251
+3. BoW,"Hamburger Klimabericht – Wissen über Klima, Klimawandel und Auswirkungen in Hamburg und Norddeutschland",Agenda-Setting Zwischen Parlament Und Medien : Normative Herleitung Und Empirische Untersuchung Am Beispiel Der Schweiz,0.195
+4. FastText,"Hamburger Klimabericht – Wissen über Klima, Klimawandel und Auswirkungen in Hamburg und Norddeutschland","Protocols for Pre-Field Screening of Mutants for Salt Tolerance in Rice, Wheat and Barley",0.9890000224113464
+4. FastText,"Hamburger Klimabericht – Wissen über Klima, Klimawandel und Auswirkungen in Hamburg und Norddeutschland","Micro-, Meso- and Macro-Connectomics of the Brain",0.984000027179718
+4. FastText,"Hamburger Klimabericht – Wissen über Klima, Klimawandel und Auswirkungen in Hamburg und Norddeutschland",The Golden and Ghoulish Age of the Gibbet in Britain,0.9829999804496765
+4. FastText,"Hamburger Klimabericht – Wissen über Klima, Klimawandel und Auswirkungen in Hamburg und Norddeutschland","Micro-, Meso- and Macro-Dynamics of the Brain",0.9819999933242798
+4. FastText,"Hamburger Klimabericht – Wissen über Klima, Klimawandel und Auswirkungen in Hamburg und Norddeutschland",Ecological Risk Assessment for Chlorpyrifos in Terrestrial and Aquatic Systems in the United States,0.9750000238418579
+5. GloVe,"Hamburger Klimabericht – Wissen über Klima, Klimawandel und Auswirkungen in Hamburg und Norddeutschland","Bildungsverläufe Von Der Einschulung Bis in Den Ersten Arbeitsmarkt : Theoretische Ansätze, Empirische Befunde Und Beispiele",0.967
+6. BERT,"Hamburger Klimabericht – Wissen über Klima, Klimawandel und Auswirkungen in Hamburg und Norddeutschland","Klimawandel in Deutschland : Entwicklung, Folgen, Risiken Und Perspektiven",0.5509999990463257
+6. BERT,"Hamburger Klimabericht – Wissen über Klima, Klimawandel und Auswirkungen in Hamburg und Norddeutschland","Microfinance, Eu Structural Funds and Capacity Building For Managing Authorities : a Comparative Analysis of European Convergence Regions",0.30799999833106995
+6. BERT,"Hamburger Klimabericht – Wissen über Klima, Klimawandel und Auswirkungen in Hamburg und Norddeutschland",Beyond the Limits to Growth : New Ideas for Sustainability from Japan,0.3050000071525574
+6. BERT,"Hamburger Klimabericht – Wissen über Klima, Klimawandel und Auswirkungen in Hamburg und Norddeutschland",Digitale Souveränität : Bürger | Unternehmen | Staat,0.27900001406669617
+6. BERT,"Hamburger Klimabericht – Wissen über Klima, Klimawandel und Auswirkungen in Hamburg und Norddeutschland","Rangeland Systems : Processes, Management and Challenges",0.27900001406669617

@@ -1,0 +1,61 @@
+algorithm,num_recommendations,book_title
+1. TF-IDF + cosine,3,Protest Movements in Asylum and Deportation
+2. LSA,15,Protest Movements in Asylum and Deportation
+5. BERT,19,Protest Movements in Asylum and Deportation
+6. BoW,14,Protest Movements in Asylum and Deportation
+9. FastText,89,Protest Movements in Asylum and Deportation
+10. GloVe,185,Protest Movements in Asylum and Deportation
+1. TF-IDF + cosine,8,Firm innovation and Productivity in Latin America and The Caribbean : The Engine of Economic Development
+2. LSA,14,Firm innovation and Productivity in Latin America and The Caribbean : The Engine of Economic Development
+5. BERT,8,Firm innovation and Productivity in Latin America and The Caribbean : The Engine of Economic Development
+6. BoW,17,Firm innovation and Productivity in Latin America and The Caribbean : The Engine of Economic Development
+9. FastText,195,Firm innovation and Productivity in Latin America and The Caribbean : The Engine of Economic Development
+10. GloVe,203,Firm innovation and Productivity in Latin America and The Caribbean : The Engine of Economic Development
+1. TF-IDF + cosine,11,Fading Foundations : Probability and The Regress Problem
+2. LSA,15,Fading Foundations : Probability and The Regress Problem
+5. BERT,96,Fading Foundations : Probability and The Regress Problem
+6. BoW,17,Fading Foundations : Probability and The Regress Problem
+9. FastText,205,Fading Foundations : Probability and The Regress Problem
+10. GloVe,8,Fading Foundations : Probability and The Regress Problem
+1. TF-IDF + cosine,16,The Mathematics Education of Prospective Secondary Teachers Around the World
+2. LSA,24,The Mathematics Education of Prospective Secondary Teachers Around the World
+5. BERT,22,The Mathematics Education of Prospective Secondary Teachers Around the World
+6. BoW,26,The Mathematics Education of Prospective Secondary Teachers Around the World
+9. FastText,98,The Mathematics Education of Prospective Secondary Teachers Around the World
+10. GloVe,147,The Mathematics Education of Prospective Secondary Teachers Around the World
+1. TF-IDF + cosine,8,Biodiversity Conservation and Phylogenetic Systematics : Preserving Our Evolutionary Heritage in An Extinction Crisis (Volume 14.0)
+2. LSA,12,Biodiversity Conservation and Phylogenetic Systematics : Preserving Our Evolutionary Heritage in An Extinction Crisis (Volume 14.0)
+5. BERT,20,Biodiversity Conservation and Phylogenetic Systematics : Preserving Our Evolutionary Heritage in An Extinction Crisis (Volume 14.0)
+6. BoW,8,Biodiversity Conservation and Phylogenetic Systematics : Preserving Our Evolutionary Heritage in An Extinction Crisis (Volume 14.0)
+9. FastText,187,Biodiversity Conservation and Phylogenetic Systematics : Preserving Our Evolutionary Heritage in An Extinction Crisis (Volume 14.0)
+10. GloVe,54,Biodiversity Conservation and Phylogenetic Systematics : Preserving Our Evolutionary Heritage in An Extinction Crisis (Volume 14.0)
+1. TF-IDF + cosine,19,How Generations Remember
+2. LSA,43,How Generations Remember
+5. BERT,35,How Generations Remember
+6. BoW,53,How Generations Remember
+9. FastText,97,How Generations Remember
+10. GloVe,134,How Generations Remember
+1. TF-IDF + cosine,11,Principles and Practice of Case-Based Clinical Reasoning Education : a Method For Preclinical Students
+2. LSA,36,Principles and Practice of Case-Based Clinical Reasoning Education : a Method For Preclinical Students
+5. BERT,33,Principles and Practice of Case-Based Clinical Reasoning Education : a Method For Preclinical Students
+6. BoW,22,Principles and Practice of Case-Based Clinical Reasoning Education : a Method For Preclinical Students
+9. FastText,206,Principles and Practice of Case-Based Clinical Reasoning Education : a Method For Preclinical Students
+10. GloVe,34,Principles and Practice of Case-Based Clinical Reasoning Education : a Method For Preclinical Students
+1. TF-IDF + cosine,2,Research on an Improved QUIC Protocol MINQUIC
+2. LSA,9,Research on an Improved QUIC Protocol MINQUIC
+5. BERT,19,Research on an Improved QUIC Protocol MINQUIC
+6. BoW,7,Research on an Improved QUIC Protocol MINQUIC
+9. FastText,82,Research on an Improved QUIC Protocol MINQUIC
+10. GloVe,53,Research on an Improved QUIC Protocol MINQUIC
+1. TF-IDF + cosine,8,Finite Difference Computing with Exponential Decay Models (Volume 110.0)
+2. LSA,11,Finite Difference Computing with Exponential Decay Models (Volume 110.0)
+5. BERT,4,Finite Difference Computing with Exponential Decay Models (Volume 110.0)
+6. BoW,13,Finite Difference Computing with Exponential Decay Models (Volume 110.0)
+9. FastText,228,Finite Difference Computing with Exponential Decay Models (Volume 110.0)
+10. GloVe,85,Finite Difference Computing with Exponential Decay Models (Volume 110.0)
+1. TF-IDF + cosine,14,The Proceedings of The 12Th international Congress On Mathematical Education : intellectual and Attitudinal Challenges
+2. LSA,20,The Proceedings of The 12Th international Congress On Mathematical Education : intellectual and Attitudinal Challenges
+5. BERT,20,The Proceedings of The 12Th international Congress On Mathematical Education : intellectual and Attitudinal Challenges
+6. BoW,23,The Proceedings of The 12Th international Congress On Mathematical Education : intellectual and Attitudinal Challenges
+9. FastText,102,The Proceedings of The 12Th international Congress On Mathematical Education : intellectual and Attitudinal Challenges
+10. GloVe,77,The Proceedings of The 12Th international Congress On Mathematical Education : intellectual and Attitudinal Challenges

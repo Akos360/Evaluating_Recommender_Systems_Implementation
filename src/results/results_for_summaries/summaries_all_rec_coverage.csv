@@ -1,0 +1,7 @@
+Algorithm,Num_of_rec
+1. TF-IDF + cosine,20
+2. LSA,22
+6. BoW,25
+9. FastText,60
+10. GloVe,114
+5. BERT,18

@@ -32,19 +32,24 @@ System to evaluate and compare multiple text-based recommendation algorithms usi
 
   - used language: **Python 3.10.6**  
   - used libraries and tools:  
-    - `pandas`  
-    - `numpy`  
-    - `psutil`  
-    - `GPUtil`  
-    - `time`  
-    - `os`  
-    - `tqdm`  
-    - `joblib`  
-    - `multiprocessing`  
-    - `scikit-learn` *(for `cosine_similarity`, `TfidfVectorizer`, `CountVectorizer`, `TruncatedSVD`)*  
-    - `gensim` *(for `FastText`)*  
-    - `sentence-transformers` *(for `SentenceTransformer`)*  
-    - `torch` 
+    - `pandas` – for structured data manipulation using DataFrames  
+    - `numpy` – for efficient numerical computations and array handling  
+    - `psutil` – to monitor CPU and memory usage during algorithm execution  
+    - `GPUtil` – to monitor GPU usage during embedding generation and inference  
+    - `time` – for measuring execution time and performance metrics  
+    - `os` – for file handling, path management, and process ID access  
+    - `tqdm` – to display progress bars for loops and slow operations  
+    - `joblib` – for parallelizing tasks like similarity calculations across cores  
+    - `multiprocessing` – to enable parallel CPU/GPU/Memory resource tracking  
+    - `scikit-learn` – used for:  
+      - `cosine_similarity` – to compute vector similarity between documents  
+      - `TfidfVectorizer` – to transform text into TF-IDF vectors  
+      - `CountVectorizer` – to generate Bag-of-Words representations  
+      - `TruncatedSVD` – for Latent Semantic Analysis (dimensionality reduction)  
+    - `gensim` – for training and using FastText embeddings on custom datasets  
+    - `sentence-transformers` – for generating contextual embeddings with Sentence-BERT  
+    - `torch` – for GPU-based tensor operations and cosine similarity computation in BERT-based models  
+
 
 - **Run example:**
     ```bash

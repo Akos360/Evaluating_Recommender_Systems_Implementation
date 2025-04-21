@@ -6,6 +6,9 @@ class TfidfRecommender(BaseRecommender):
     def __init__(self, rec_type):
         super().__init__(rec_type)
         self.vectorizer = TfidfVectorizer(stop_words='english', max_features=5000)
+    
+    def use_batch_similarity(self):
+        return True
 
     def train(self, data):
         if self.rec_type == "paragraph":
@@ -50,7 +53,10 @@ class TfidfRecommender(BaseRecommender):
             return self.vectorizer.transform(self.filtered_data['description'])
 
     def compute_similarity(self, input_vec, doc_vec):
-        return cosine_similarity(input_vec, doc_vec)[0][0]
+        return cosine_similarity(input_vec, doc_vec)[0, 0]
+
+    def compute_all_similarities(self, input_vec, doc_matrix):
+        return cosine_similarity(input_vec, doc_matrix).flatten()
 
     def format_recommendation(self, idx, score):
         row = self.filtered_data.iloc[idx]

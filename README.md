@@ -3,7 +3,8 @@ System to evaluate and compare multiple text-based recommendation algorithms usi
 
 
 ## Technical Documentation
-- **Google Cloud - Virtual Machine**
+- **Google Cloud - Virtual Machine**  
+All experiments were executed on a Google Cloud virtual machine (`g2-standard-8`) with **8 vCPUs**, **32 GB RAM**, and **1× NVIDIA L4 GPU**. The VM environment allowed for efficient GPU-accelerated model execution and clean, uninterrupted **resource tracking** without relying on local hardware. This setup ensured reproducibility and enabled long-running experiments remotely.
 
 ### Setup:
 
@@ -110,9 +111,9 @@ src/
 
 
 ### Datasets used:
-Book Descriptions - `datasets/book_details_clean.csv`
+Book Descriptions - `datasets/book_details_clean.csv`<br>  
 ![Book Descriptions](img/rating_data_example.png)<br><br>
-Book Paragraphs - `datasets/paragraphs_limited_to_200_quarter.csv`
+Book Paragraphs - `datasets/paragraphs_limited_to_200_quarter.csv`<br>  
 ![Book Paragraphs](img/paragraphs_example.png)<br>
 
 

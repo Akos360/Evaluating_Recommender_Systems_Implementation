@@ -10,7 +10,10 @@ class GloveRecommender(BaseRecommender):
         super().__init__(rec_type)
         self.embedding_dim = 50
         self.embeddings_index = {}
-        self.model_path = "saved_models/glove_embeddings.pkl"
+        # self.model_path = "saved_models/glove_embeddings.pkl"
+
+    def use_batch_similarity(self):
+        return False
 
     def train(self, data):
         print("🔠 Loading GloVe embeddings...")
@@ -22,12 +25,12 @@ class GloveRecommender(BaseRecommender):
                 vector = np.asarray(values[1:], dtype='float32')
                 self.embeddings_index[word] = vector
 
-        os.makedirs("saved_models", exist_ok=True)
-        joblib.dump(self.embeddings_index, self.model_path)
+        # os.makedirs("saved_models", exist_ok=True)
+        # joblib.dump(self.embeddings_index, self.model_path)
 
-    def load_model(self):
-        if not self.embeddings_index:
-            self.embeddings_index = joblib.load(self.model_path)
+    # def load_model(self):
+    #     if not self.embeddings_index:
+    #         self.embeddings_index = joblib.load(self.model_path)
 
     def get_document_vector(self, text):
         tokens = text.split()
@@ -35,7 +38,7 @@ class GloveRecommender(BaseRecommender):
         return np.mean(vectors, axis=0) if vectors else np.zeros(self.embedding_dim)
 
     def prepare_input_and_filtered(self, data, book_idx, para_idx, exclude=True):
-        self.load_model()
+        # self.load_model()
 
         if para_idx is None:
             book = data[data["book_index"] == book_idx]
@@ -70,10 +73,13 @@ class GloveRecommender(BaseRecommender):
         col = "text" if self.rec_type == "paragraph" else "description"
         return [self.get_document_vector(row[col]) for _, row in self.filtered_data.iterrows()]
 
+    # def compute_similarity(self, input_vector, doc_vector):
+    #     if np.linalg.norm(input_vector) == 0 or np.linalg.norm(doc_vector) == 0:
+    #         return 0.0
+    #     return float(np.dot(input_vector, doc_vector) / (np.linalg.norm(input_vector) * np.linalg.norm(doc_vector)))
+    
     def compute_similarity(self, input_vector, doc_vector):
-        if np.linalg.norm(input_vector) == 0 or np.linalg.norm(doc_vector) == 0:
-            return 0.0
-        return float(np.dot(input_vector, doc_vector) / (np.linalg.norm(input_vector) * np.linalg.norm(doc_vector)))
+        return cosine_similarity([input_vector], [doc_vector])[0, 0]
 
     def format_recommendation(self, idx, score):
         row = self.filtered_data.iloc[idx]

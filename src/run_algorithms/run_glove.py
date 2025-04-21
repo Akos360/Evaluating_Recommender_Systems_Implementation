@@ -1,16 +1,13 @@
-from config.base_config import get_config
+from config.base_config import get_config, save_training_time_csv
 from models.glove_model import GloveRecommender
 from core.pipeline import run_recommendation_pipeline
 from resource_tracking.resource_tracker import ResourceTracker
-
 import pandas as pd
 import os
+import time
 
 if __name__ == "__main__":
     config = get_config("glove")
-
-    # Ensure results folder exists
-    os.makedirs(config["results_dir"], exist_ok=True)
 
     # Load dataset
     data = pd.read_csv(config["data_path"], encoding="ISO-8859-1")
@@ -26,8 +23,17 @@ if __name__ == "__main__":
     )
 
     # Load and train GloVe-based recommender
+    start_time = time.time()
     model = GloveRecommender(config["rec_type"])
     model.train(data)
+    elapsed = time.time() - start_time
+    print(f"Elapsed: {elapsed} s")
+    save_training_time_csv(
+        algo_name=config["algorithm_name"],
+        rec_type=config["rec_type"],
+        train_time=elapsed,
+        dataset_size=len(data)
+    )
 
     # Save results for each test input
     def save_results(book_idx, para_idx, input_data, recommendations):
@@ -47,8 +53,11 @@ if __name__ == "__main__":
         save_fn=save_results
     )
 
+    timing_df = pd.DataFrame(results)
+    timing_df.to_csv(f"{config['results_dir']}/{config['algorithm_name']}_timing_summary.csv", index=False)
+
     # Save overall summary
-    summary_path = f"{config['results_dir']}/{config['algorithm_name']}_summary.csv"
-    pd.DataFrame(results).to_csv(summary_path, index=False)
+    # summary_path = f"{config['results_dir']}/{config['algorithm_name']}_summary.csv"
+    # pd.DataFrame(results).to_csv(summary_path, index=False)
 
     print(f"✅ {config['algorithm_name']} completed! Results saved in {config['results_dir']}")

@@ -8,11 +8,14 @@ class BaseRecommender:
         self.input_data = None
         self.filtered_data = None
 
+    def use_batch_similarity(self):
+        return True
+
     def train(self, data):
         raise NotImplementedError()
 
-    def load_model(self):
-        raise NotImplementedError()
+    # def load_model(self):
+    #     raise NotImplementedError()
 
     def prepare_input_and_filtered(self, data, book_idx, para_idx, exclude=True):
         raise NotImplementedError()

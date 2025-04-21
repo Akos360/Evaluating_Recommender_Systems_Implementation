@@ -1,6 +1,7 @@
 from gensim.models import FastText
 import numpy as np
 from .base_model import BaseRecommender
+from sklearn.metrics.pairwise import cosine_similarity
 import os
 
 
@@ -9,7 +10,10 @@ class FastTextRecommender(BaseRecommender):
         super().__init__(rec_type)
         self.model = None
         self.vector_size = 100
-        self.model_path = "saved_models/fasttext.model"
+        # self.model_path = "saved_models/fasttext.model"
+
+    def use_batch_similarity(self):
+        return False
 
     def train(self, data):
         if self.rec_type == "paragraph":
@@ -26,15 +30,15 @@ class FastTextRecommender(BaseRecommender):
             epochs=20
         )
 
-        os.makedirs("saved_models", exist_ok=True)
-        self.model.save(self.model_path)
+        # os.makedirs("saved_models", exist_ok=True)
+        # self.model.save(self.model_path)
 
-    def load_model(self):
-        if self.model is None:
-            self.model = FastText.load(self.model_path)
+    # def load_model(self):
+    #     if self.model is None:
+    #         self.model = FastText.load(self.model_path)
 
     def prepare_input_and_filtered(self, data, book_idx, para_idx, exclude=True):
-        self.load_model()
+        # self.load_model()
 
         if para_idx is None:
             book = data[data["book_index"] == book_idx]
@@ -76,10 +80,13 @@ class FastTextRecommender(BaseRecommender):
         else:
             return [self.get_document_vector(row["description"]) for _, row in self.filtered_data.iterrows()]
 
-    def compute_similarity(self, input_vector, doc_vector):
-        if np.linalg.norm(input_vector) == 0 or np.linalg.norm(doc_vector) == 0:
-            return 0.0
-        return float(np.dot(input_vector, doc_vector) / (np.linalg.norm(input_vector) * np.linalg.norm(doc_vector)))
+    # def compute_similarity(self, input_vector, doc_vector):
+    #     if np.linalg.norm(input_vector) == 0 or np.linalg.norm(doc_vector) == 0:
+    #         return 0.0
+    #     return float(np.dot(input_vector, doc_vector) / (np.linalg.norm(input_vector) * np.linalg.norm(doc_vector)))
+
+    def compute_similarity(self, input_vec, doc_vec):
+        return cosine_similarity(input_vec.reshape(1, -1), doc_vec.reshape(1, -1))[0][0]
 
     def format_recommendation(self, idx, score):
         row = self.filtered_data.iloc[idx]

@@ -3,7 +3,7 @@ from sklearn.decomposition import TruncatedSVD
 from sklearn.metrics.pairwise import cosine_similarity
 from .base_model import BaseRecommender
 import joblib
-import numpy as np
+
 import os
 
 
@@ -13,8 +13,11 @@ class LSARecommender(BaseRecommender):
         self.vectorizer = TfidfVectorizer(stop_words="english", max_features=5000)
         self.lsa = TruncatedSVD(n_components=500, random_state=42)
         self.lsa_matrix = None
-        self.model_path = "saved_models/lsa.pkl"
-
+        # self.model_path = "saved_models/lsa.pkl"
+        
+    def use_batch_similarity(self):
+        return True
+        
     def train(self, data):
         if self.rec_type == "paragraph":
             tfidf_matrix = self.vectorizer.fit_transform(data["text"])
@@ -23,15 +26,15 @@ class LSARecommender(BaseRecommender):
 
         self.lsa_matrix = self.lsa.fit_transform(tfidf_matrix)
 
-        os.makedirs("saved_models", exist_ok=True)
-        joblib.dump((self.vectorizer, self.lsa, self.lsa_matrix), self.model_path)
+        # os.makedirs("saved_models", exist_ok=True)
+        # joblib.dump((self.vectorizer, self.lsa, self.lsa_matrix), self.model_path)
 
-    def load_model(self):
-        if self.lsa_matrix is None:
-            self.vectorizer, self.lsa, self.lsa_matrix = joblib.load(self.model_path)
+    # def load_model(self):
+    #     if self.lsa_matrix is None:
+    #         self.vectorizer, self.lsa, self.lsa_matrix = joblib.load(self.model_path)
 
     def prepare_input_and_filtered(self, data, book_idx, para_idx, exclude=True):
-        self.load_model()
+        # self.load_model()
 
         if para_idx is None:
             book = data[data["book_index"] == book_idx]
@@ -71,7 +74,10 @@ class LSARecommender(BaseRecommender):
         return self.lsa.transform(tfidf_matrix)
 
     def compute_similarity(self, input_vector, doc_vector):
-        return cosine_similarity(input_vector, doc_vector.reshape(1, -1))[0][0]
+        return cosine_similarity(input_vector, doc_vector.reshape(1, -1))[0, 0]
+    
+    def compute_all_similarities(self, input_vec, doc_matrix):
+        return cosine_similarity(input_vec, doc_matrix).flatten()
 
     def format_recommendation(self, idx, score):
         row = self.filtered_data.iloc[idx]

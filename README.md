@@ -3,8 +3,6 @@ System to evaluate and compare multiple text-based recommendation algorithms usi
 
 
 ## Technical Documentation
-- **Google Cloud - Virtual Machine**  
-All experiments were executed on a Google Cloud virtual machine (`g2-standard-8`) with **8 vCPUs**, **32 GB RAM**, and **1× NVIDIA L4 GPU**. The VM environment allowed for efficient GPU-accelerated model execution and clean, uninterrupted **resource tracking** without relying on local hardware. This setup ensured reproducibility and enabled long-running experiments remotely.
 
 ### Setup:
 
@@ -92,8 +90,10 @@ src/
 
 
 ### Deployment
+![Deployment Diagram](img/deployment_diagram.png)
 <br>
-
+- **Google Cloud - Virtual Machine**  
+All experiments were executed on a Google Cloud virtual machine (`g2-standard-8`) with **8 vCPUs**, **32 GB RAM**, and **1× NVIDIA L4 GPU**. The VM environment allowed for efficient GPU-accelerated model execution and clean, uninterrupted **resource tracking** without relying on local hardware. This setup ensured reproducibility and enabled long-running experiments remotely.
 
 ---
 ### Conceptual Proposal
@@ -194,7 +194,7 @@ To extend the system with a new text representation model, follow these steps:
    - Edit `config/base_config.py`  
    - Set your algorithm name, dataset path, and threshold if needed
 
-5. **Run your model**  
+5. **Run new model**  
    ```bash
    python3 -m run_algorithms.run_new_model
     ```

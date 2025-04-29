@@ -1,0 +1,7 @@
+file,avg_similarity,coverage,confidence,diversity
+bert_times.csv,,0.01,,
+bow_times.csv,,0.01,,
+fasttext_times.csv,,0.01,,
+glove_times.csv,,0.01,,
+lsa_times.csv,,0.01,,
+tf_idf_times.csv,,0.01,,

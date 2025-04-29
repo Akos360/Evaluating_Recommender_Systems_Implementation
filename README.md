@@ -112,6 +112,7 @@ All experiments were executed on a Google Cloud virtual machine (`g2-standard-8`
 - BoW (Bag of Words)
 - FastText (Facebook's FastText Word Embeddings)
 - GloVe (Global Vectors for Word Representation)
+  - Pretrained 50-dimensional embeddings were used from the [GloVe project](https://nlp.stanford.edu/projects/glove/) trained on 6B tokens from Wikipedia and Gigaword. (add it to saved_models)
 - BERT (Bidirectional Encoder Representations from Transformers - Sentence-BERT variant)
 
 

@@ -1,0 +1,7 @@
+Algorithm,avg_memory_usage
+bert,1141.38
+bow,202.89
+fasttext,1193.43
+glove,344.33
+lsa,424.85
+tf_idf,193.64

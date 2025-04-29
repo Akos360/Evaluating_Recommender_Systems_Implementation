@@ -1,0 +1,10 @@
+book_index,similarity_score,title,author,rating,no_of_ratings,no_of_reviews,genres
+27.0,0.376,Dear Barack: The Extraordinary Partnership of Barack Obama and Angela Merkel,Claudia   Clark,4.28,6230,357,"Nonfiction, History, Book Club, How To, Politics, Inspirational, Education"
+303.0,0.334,Never Too Far,Abbi Glines,4.17,120317,6302,"Romance, New Adult, Contemporary, Contemporary Romance, Young Adult, Chick Lit, Adult"
+7128.0,0.298,Effacement,Hieronymus Hawkes,4.23,472,63,"Science Fiction, Contemporary, Novels, Drama, Mystery, Thriller, Fiction"
+12451.0,0.276,"""A Problem from Hell"": America and the Age of Genocide",Samantha Power,4.25,10195,647,"Nonfiction, History, Politics, War, Africa, American History, International Relations"
+8882.0,0.249,Children of the Moon,Evadeen Brickwood,4.83,6,3,
+9260.0,0.248,The Gene: An Intimate History,Siddhartha Mukherjee,4.36,46485,4294,"Science, Nonfiction, History, Biology, Medicine, Genetics, Health"
+6936.0,0.221,Where There's Smoke,Kirsten Fullmer,4.3,3822,50,"Fiction, Cozy Mystery, Mystery, Romance, Contemporary"
+9448.0,0.216,Take This Regret,Amy Lichtenhan,4.01,24595,1793,"Romance, Contemporary Romance, Contemporary, New Adult, Adult, Chick Lit, Drama"
+6905.0,0.209,Mystic River,Dennis Lehane,4.16,141330,4620,"Mystery, Fiction, Thriller, Crime, Mystery Thriller, Suspense, Audiobook"

@@ -1,0 +1,7 @@
+Algorithm,avg_cpu_time
+bert,27.757
+bow,0.275
+fasttext,11.821
+glove,3.21
+lsa,2.041
+tf_idf,1.729

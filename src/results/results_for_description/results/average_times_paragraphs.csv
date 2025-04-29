@@ -1,0 +1,7 @@
+Algorithm,avg_elapsed_time,avg_ips
+bert,74.456,1655.914
+bow,15.256,2990.393
+fasttext,49.959,932.333
+glove,14.888,3061.44
+lsa,13.248,3420.536
+tf_idf,15.206,2974.677

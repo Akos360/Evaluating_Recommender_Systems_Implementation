@@ -1,0 +1,7 @@
+algorithm,avg_rating,avg_no_of_ratings,avg_no_of_reviews,avg_weighted_rating,genre_alignment (%)
+bert,4.016,65661.0,3952.0,4.033,14.4
+bow,4.061,72304.0,3910.0,4.052,21.5
+fasttext,4.012,68134.0,3930.0,4.029,13.4
+glove,4.014,68381.0,3912.0,4.03,13.0
+lsa,4.031,58405.0,3602.0,4.035,14.9
+tf_idf,4.058,47547.0,2849.0,4.037,15.6

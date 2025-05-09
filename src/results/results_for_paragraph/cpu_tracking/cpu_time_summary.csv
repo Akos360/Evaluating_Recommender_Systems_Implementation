@@ -1,6 +1,7 @@
 Algorithm,avg_cpu_time
 bert,103.399
 bow,0.809
+e5,482.157
 fasttext,44.964
 glove,10.314
 lsa,8.179

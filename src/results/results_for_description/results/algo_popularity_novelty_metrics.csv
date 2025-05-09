@@ -1,0 +1,8 @@
+Algorithm,popularity_ratio (%),novelty_ratio (%)
+bert,18.0,3.0
+bow,25.0,5.0
+fasttext,9.0,2.0
+glove,13.0,3.0
+lsa,16.0,2.0
+tf_idf,9.56,2.0
+e5,10.33,5.0

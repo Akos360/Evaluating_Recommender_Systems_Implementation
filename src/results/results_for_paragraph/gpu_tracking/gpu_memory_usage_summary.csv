@@ -1,0 +1,8 @@
+Algorithm,avg_gpu_memory_usage
+bert,670.89
+bow,1.0
+e5,1824.2
+fasttext,1.0
+glove,1.0
+lsa,1.0
+tf_idf,1.0

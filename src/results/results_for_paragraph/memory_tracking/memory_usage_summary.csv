@@ -1,6 +1,7 @@
 Algorithm,avg_memory_usage
 bert,1227.44
 bow,378.45
+e5,1313.28
 fasttext,2002.8
 glove,420.78
 lsa,744.64

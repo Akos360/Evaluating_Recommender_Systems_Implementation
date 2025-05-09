@@ -1,0 +1,8 @@
+Algorithm,avg_elapsed_time
+bert,74.456
+bow,15.256
+e5,453.694
+fasttext,49.959
+glove,14.888
+lsa,13.248
+tf_idf,15.206

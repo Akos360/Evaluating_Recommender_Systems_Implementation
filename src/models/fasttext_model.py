@@ -10,7 +10,6 @@ class FastTextRecommender(BaseRecommender):
         super().__init__(rec_type)
         self.model = None
         self.vector_size = 100
-        # self.model_path = "saved_models/fasttext.model"
 
     def use_batch_similarity(self):
         return False
@@ -30,6 +29,7 @@ class FastTextRecommender(BaseRecommender):
             epochs=20
         )
 
+        # For saving the model if needed
         # os.makedirs("saved_models", exist_ok=True)
         # self.model.save(self.model_path)
 
@@ -38,8 +38,7 @@ class FastTextRecommender(BaseRecommender):
     #         self.model = FastText.load(self.model_path)
 
     def prepare_input_and_filtered(self, data, book_idx, para_idx, exclude=True):
-        # self.load_model()
-
+        # filter descriptions
         if para_idx is None:
             book = data[data["book_index"] == book_idx]
             if book.empty:
@@ -52,6 +51,8 @@ class FastTextRecommender(BaseRecommender):
             }
             self.filtered_data = data if not exclude else data[data["book_index"] != book_idx]
             self.filtered_data = self.filtered_data.drop_duplicates(subset=["description"]).reset_index(drop=True)
+        
+        # filter paragraphs
         else:
             para = data[(data["book_index"] == book_idx) & (data["paragraph_index"] == para_idx)]
             if para.empty:
@@ -79,11 +80,6 @@ class FastTextRecommender(BaseRecommender):
             return [self.get_document_vector(row["text"]) for _, row in self.filtered_data.iterrows()]
         else:
             return [self.get_document_vector(row["description"]) for _, row in self.filtered_data.iterrows()]
-
-    # def compute_similarity(self, input_vector, doc_vector):
-    #     if np.linalg.norm(input_vector) == 0 or np.linalg.norm(doc_vector) == 0:
-    #         return 0.0
-    #     return float(np.dot(input_vector, doc_vector) / (np.linalg.norm(input_vector) * np.linalg.norm(doc_vector)))
 
     def compute_similarity(self, input_vec, doc_vec):
         return cosine_similarity(input_vec.reshape(1, -1), doc_vec.reshape(1, -1))[0][0]

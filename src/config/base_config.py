@@ -2,22 +2,20 @@ import pandas as pd
 import os
 
 def get_config(algo_name):
-    """
-    Returns a config dictionary for the given algorithm.
-    """
 
-    # --- Choose recommendation type ---
+    # Choose recommendation type
+
     rec_type = "paragraph"
     # rec_type = "description"
 
-    # --- Set dataset path ---
+    # Set dataset path
     data_path = (
         "../datasets/paragraphs_limited_to_200_quarter.csv"
         if rec_type == "paragraph"
         else "../datasets/book_details_clean.csv"
     )
 
-    # --- Set input test pairs ---
+    # Set input test pairs
     input_pairs = (
         [
             (70, 1001),
@@ -35,15 +33,16 @@ def get_config(algo_name):
         else [(i, None) for i in range(70, 80)]
     )
 
-    # --- Set paths for results and tracking (inside src/results/) ---
+    # Set paths for results and tracking (inside src/results/)
     tracking_base = f"results/results_for_{rec_type}"
     results_dir = f"{tracking_base}/results/{algo_name}"
 
+    # Set thresholds - for each model separate
     thresholds = {
         "tf_idf": 0.5,
         "lsa": 0.5,
         "bow": 0.3,
-        "glove": 0.99,
+        "glove": 0.95,
         "fasttext": 0.95,
         "bert": 0.5
     }
@@ -59,6 +58,9 @@ def get_config(algo_name):
         # Recommendation logic
         "top_n": 5,
         "threshold": threshold,
+
+        # If coverage is True - recommendations will be returned above threshold
+        # If False - recommendations will be returned top N
         "test_coverage": True,
 
         # Output paths

@@ -13,8 +13,7 @@ class LSARecommender(BaseRecommender):
         self.vectorizer = TfidfVectorizer(stop_words="english", max_features=5000)
         self.lsa = TruncatedSVD(n_components=500, random_state=42)
         self.lsa_matrix = None
-        # self.model_path = "saved_models/lsa.pkl"
-        
+
     def use_batch_similarity(self):
         return True
         
@@ -26,6 +25,7 @@ class LSARecommender(BaseRecommender):
 
         self.lsa_matrix = self.lsa.fit_transform(tfidf_matrix)
 
+        # For saving the model if needed
         # os.makedirs("saved_models", exist_ok=True)
         # joblib.dump((self.vectorizer, self.lsa, self.lsa_matrix), self.model_path)
 
@@ -34,8 +34,7 @@ class LSARecommender(BaseRecommender):
     #         self.vectorizer, self.lsa, self.lsa_matrix = joblib.load(self.model_path)
 
     def prepare_input_and_filtered(self, data, book_idx, para_idx, exclude=True):
-        # self.load_model()
-
+        # filter descriptions
         if para_idx is None:
             book = data[data["book_index"] == book_idx]
             if book.empty:
@@ -48,6 +47,8 @@ class LSARecommender(BaseRecommender):
             }
             self.filtered_data = data if not exclude else data[data["book_index"] != book_idx]
             self.filtered_data = self.filtered_data.drop_duplicates(subset=["description"]).reset_index(drop=True)
+        
+        # filter paragraphs
         else:
             para = data[(data["book_index"] == book_idx) & (data["paragraph_index"] == para_idx)]
             if para.empty:

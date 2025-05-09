@@ -12,7 +12,7 @@ if __name__ == "__main__":
     # Load dataset
     data = pd.read_csv(config["data_path"], encoding="ISO-8859-1")
 
-    # Initialize resource tracker with updated tracking paths
+    # Initialize resource tracker with correct paths
     tracker = ResourceTracker(
         pid=os.getpid(),
         algorithm_name=config["algorithm_name"],
@@ -22,7 +22,7 @@ if __name__ == "__main__":
         gpu_file=f"{config['tracking_base']}/gpu_tracking/{config['algorithm_name']}_gpu_usage.csv"
     )
 
-    # Train FastText model
+    # Load and train model
     start_time = time.time()
     model = FastTextRecommender(config["rec_type"])
     model.train(data)
@@ -35,12 +35,12 @@ if __name__ == "__main__":
         dataset_size=len(data)
     )
 
-    # Save individual result files
+    # Save results per input pair
     def save_results(book_idx, para_idx, input_data, recommendations):
         file_path = f"{config['results_dir']}/{config['algorithm_name']}_results_{book_idx}_{para_idx}.csv"
         pd.DataFrame(recommendations).to_csv(file_path, index=False)
-
-    # Run pipeline
+    
+    # Run the main pipeline
     results = run_recommendation_pipeline(
         model=model,
         data=data,
@@ -56,8 +56,4 @@ if __name__ == "__main__":
     timing_df = pd.DataFrame(results)
     timing_df.to_csv(f"{config['results_dir']}/{config['algorithm_name']}_timing_summary.csv", index=False)
 
-    # Save overall summary
-    # summary_path = f"{config['results_dir']}/{config['algorithm_name']}_summary.csv"
-    # pd.DataFrame(results).to_csv(summary_path, index=False)
-
-    print(f"✅ {config['algorithm_name']} completed! Results saved in {config['results_dir']}")
+    print(f"{config['algorithm_name']} completed! Results saved in {config['results_dir']}")

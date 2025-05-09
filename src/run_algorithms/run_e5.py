@@ -1,5 +1,5 @@
 from config.base_config import get_config, save_training_time_csv
-from models.glove_model import GloveRecommender
+from models.e5_model import E5Recommender
 from core.pipeline import run_recommendation_pipeline
 from resource_tracking.resource_tracker import ResourceTracker
 import pandas as pd
@@ -7,9 +7,9 @@ import os
 import time
 
 if __name__ == "__main__":
-    config = get_config("glove")
+    config = get_config("e5")
 
-    # Load dataset
+    # Load data
     data = pd.read_csv(config["data_path"], encoding="ISO-8859-1")
 
     # Initialize resource tracker with correct paths
@@ -22,18 +22,8 @@ if __name__ == "__main__":
         gpu_file=f"{config['tracking_base']}/gpu_tracking/{config['algorithm_name']}_gpu_usage.csv"
     )
 
-    # Load GloVe-based recommender
-    start_time = time.time()
-    model = GloveRecommender(config["rec_type"])
-    model.train(data)
-    elapsed = time.time() - start_time
-    print(f"Elapsed: {elapsed} s")
-    save_training_time_csv(
-        algo_name=config["algorithm_name"],
-        rec_type=config["rec_type"],
-        train_time=elapsed,
-        dataset_size=len(data)
-    )
+    # Load model
+    model = E5Recommender(config["rec_type"], model_name="intfloat/e5-base")
 
     # Save results per input pair
     def save_results(book_idx, para_idx, input_data, recommendations):

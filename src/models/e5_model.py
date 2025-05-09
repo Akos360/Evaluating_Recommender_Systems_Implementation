@@ -1,37 +1,22 @@
 from .base_model import BaseRecommender
-from sklearn.metrics.pairwise import cosine_similarity
-import numpy as np
 import os
-import joblib
+import torch
+from sentence_transformers import SentenceTransformer
+from torch.nn.functional import cosine_similarity as torch_cosine
+from tqdm import tqdm
 
-
-class GloveRecommender(BaseRecommender):
-    def __init__(self, rec_type):
+class E5Recommender(BaseRecommender):
+    def __init__(self, rec_type, model_name="intfloat/e5-base"):
         super().__init__(rec_type)
-        self.embedding_dim = 50
-        self.embeddings_index = {}
+        self.model_name = model_name
+        self.device = "cuda" if torch.cuda.is_available() else "cpu"
+        self.model = SentenceTransformer(model_name).to(self.device)
 
     def use_batch_similarity(self):
         return False
 
     def train(self, data):
-        print("Loading GloVe embeddings...")
-        self.embeddings_index = {}
-        with open("saved_models/glove.6B.50d.txt", 'r', encoding='utf-8') as f:
-            for line in f:
-                values = line.split()
-                word = values[0]
-                vector = np.asarray(values[1:], dtype='float32')
-                self.embeddings_index[word] = vector
-
-    # def load_model(self):
-    #     if not self.embeddings_index:
-    #         self.embeddings_index = joblib.load(self.model_path)
-
-    def get_document_vector(self, text):
-        tokens = text.split()
-        vectors = [self.embeddings_index[word] for word in tokens if word in self.embeddings_index]
-        return np.mean(vectors, axis=0) if vectors else np.zeros(self.embedding_dim)
+        pass 
 
     def prepare_input_and_filtered(self, data, book_idx, para_idx, exclude=True):
         # filter descriptions
@@ -64,14 +49,24 @@ class GloveRecommender(BaseRecommender):
             self.filtered_data = self.filtered_data.drop_duplicates(subset=["text"]).reset_index(drop=True)
 
     def get_input_vector(self):
-        return self.get_document_vector(self.input_text)
+        return self.model.encode(self.input_text, convert_to_tensor=True).to(self.device)
 
     def get_doc_vectors(self):
         col = "text" if self.rec_type == "paragraph" else "description"
-        return [self.get_document_vector(row[col]) for _, row in self.filtered_data.iterrows()]
+        texts = self.filtered_data[col].tolist()
+        print("Encoding texts with E5...")
+        with tqdm(total=len(texts), desc="Encoding (E5)", unit="doc") as pbar:
+            embeddings = self.model.encode(
+                texts,
+                convert_to_tensor=True,
+                show_progress_bar=False,
+                batch_size=32
+            ).to(self.device)
+            pbar.update(len(texts))
+        return embeddings
 
-    def compute_similarity(self, input_vector, doc_vector):
-        return cosine_similarity([input_vector], [doc_vector])[0, 0]
+    def compute_similarity(self, input_vec, doc_vec):
+        return torch_cosine(input_vec, doc_vec, dim=0).item()
 
     def format_recommendation(self, idx, score):
         row = self.filtered_data.iloc[idx]

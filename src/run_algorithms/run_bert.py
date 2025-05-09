@@ -46,8 +46,4 @@ if __name__ == "__main__":
     timing_df = pd.DataFrame(results)
     timing_df.to_csv(f"{config['results_dir']}/{config['algorithm_name']}_timing_summary.csv", index=False)
 
-    # Save overall summary
-    # summary_path = f"{results_dir}/{config['algorithm_name']}_summary.csv"
-    # pd.DataFrame(results).to_csv(summary_path, index=False)
-
-    print(f"✅ {config['algorithm_name']} completed! Results saved in {config['results_dir']}")
+    print(f"{config['algorithm_name']} completed! Results saved in {config['results_dir']}")

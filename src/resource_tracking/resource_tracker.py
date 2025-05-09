@@ -37,17 +37,14 @@ class ResourceTracker:
         return proc
 
     def wait_for_trackers(self, timeout=60):
-        """
-        Blocks until all tracking processes set the 'finished' flag or until timeout.
-        """
         start = time.time()
         while not self.status_flag.get("finished", False):
             if time.time() - start > timeout:
-                print("⚠️ Timed out waiting for trackers to finish.")
+                print("Timed out waiting for trackers to finish.")
                 break
             time.sleep(0.5)
 
-
+    # Sampling RAM Memory
     def memory_tracker(self, run_index):
         process = psutil.Process(self.pid)
         self.status_flag['started'] = True  
@@ -60,9 +57,10 @@ class ResourceTracker:
         memory_df = pd.DataFrame(list(self.shared_memory_list), columns=["timestamp", "memory_usage"])
         path = f"results/results_for_{self.rec_type}/memory_tracking/{self.algorithm_name}/run_{run_index}_memory_usage.csv"
         memory_df.to_csv(path, index=False)
-        print(f"✅ Memory tracking saved to {path}")
+        print(f"Memory tracking saved to {path}")
         self.status_flag['finished'] = True
 
+    # Tracking CPU time
     def cpu_time_tracker(self, run_index):
         process = psutil.Process(self.pid)
         self.status_flag['started'] = True
@@ -85,9 +83,10 @@ class ResourceTracker:
                               columns=["elapsed_time", "total_cpu_time", "user_time", "system_time"])
         path = f"results/results_for_{self.rec_type}/cpu_tracking/{self.algorithm_name}/run_{run_index}_cpu_time_usage.csv"
         cpu_df.to_csv(path, index=False)
-        print(f"✅ CPU tracking saved to {path}")
+        print(f"CPU tracking saved to {path}")
         self.status_flag['finished'] = True
 
+    # Sampling GPU Memory
     def gpu_tracker(self, run_index):
         self.status_flag['started'] = True
 
@@ -101,5 +100,5 @@ class ResourceTracker:
         gpu_df = pd.DataFrame(list(self.shared_gpu_list), columns=["timestamp", "gpu_usage", "gpu_memory"])
         path = f"results/results_for_{self.rec_type}/gpu_tracking/{self.algorithm_name}/run_{run_index}_gpu_usage.csv"
         gpu_df.to_csv(path, index=False)
-        print(f"✅ GPU tracking saved to {path}")
+        print(f"GPU tracking saved to {path}")
         self.status_flag['finished'] = True

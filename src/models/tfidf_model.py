@@ -17,6 +17,7 @@ class TfidfRecommender(BaseRecommender):
             self.vectorizer.fit(data['description'])
 
     def prepare_input_and_filtered(self, data, book_idx, para_idx, exclude=True):
+        # filter descriptions
         if para_idx is None:
             book = data[data['book_index'] == book_idx]
             if book.empty:
@@ -29,6 +30,8 @@ class TfidfRecommender(BaseRecommender):
             }
             self.filtered_data = data if not exclude else data[data['book_index'] != book_idx]
             self.filtered_data = self.filtered_data.drop_duplicates(subset=["description"]).reset_index(drop=True)
+        
+        # filter paragraphs
         else:
             para = data[(data["book_index"] == book_idx) & (data["paragraph_index"] == para_idx)]
             if para.empty:

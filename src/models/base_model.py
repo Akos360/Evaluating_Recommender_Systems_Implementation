@@ -1,8 +1,5 @@
 class BaseRecommender:
     def __init__(self, rec_type):
-        """
-        rec_type: either "paragraph" or "description"
-        """
         self.rec_type = rec_type
         self.input_text = None
         self.input_data = None
@@ -11,13 +8,13 @@ class BaseRecommender:
     def use_batch_similarity(self):
         return True
 
-    def train(self, data):
+    def train(self):
         raise NotImplementedError()
 
     # def load_model(self):
     #     raise NotImplementedError()
 
-    def prepare_input_and_filtered(self, data, book_idx, para_idx, exclude=True):
+    def prepare_input_and_filtered(self):
         raise NotImplementedError()
 
     def get_input_vector(self):
@@ -26,8 +23,8 @@ class BaseRecommender:
     def get_doc_vectors(self):
         raise NotImplementedError()
 
-    def compute_similarity(self, input_vector, doc_vector):
+    def compute_similarity(self):
         raise NotImplementedError()
 
-    def format_recommendation(self, idx, score):
+    def format_recommendation(self):
         raise NotImplementedError()

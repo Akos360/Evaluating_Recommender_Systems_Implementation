@@ -11,7 +11,6 @@ class BoWRecommender(BaseRecommender):
         super().__init__(rec_type)
         self.vectorizer = CountVectorizer(stop_words="english")
         self.bow_matrix = None
-        # self.model_path = "saved_models/bow.pkl"
 
     def use_batch_similarity(self):
         return True
@@ -22,6 +21,7 @@ class BoWRecommender(BaseRecommender):
         else:
             self.bow_matrix = self.vectorizer.fit_transform(data["description"])
 
+        # For saving the model if needed
         # os.makedirs("saved_models", exist_ok=True)
         # joblib.dump((self.vectorizer, self.bow_matrix), self.model_path)
 
@@ -30,25 +30,23 @@ class BoWRecommender(BaseRecommender):
     #         self.vectorizer, self.bow_matrix = joblib.load(self.model_path)
 
     def prepare_input_and_filtered(self, data, book_idx, para_idx, exclude=True):
-        # self.load_model()
-
+        # filter descriptions
         if para_idx is None:
             book = data[data["book_index"] == book_idx]
             if book.empty:
                 raise ValueError("Book not found.")
-            
             self.input_text = book.iloc[0]["description"]
             self.input_data = {
                 "book_index": book.iloc[0]["book_index"],
                 "book_title": book.iloc[0]["title"],
                 "description": self.input_text,
             }
-
             if exclude:
                 self.filtered_data = data[data["book_index"] != book_idx]
             else:
                 self.filtered_data = data
-
+                
+        # filter paragraphs
         else:
             para = data[(data["book_index"] == book_idx) & (data["paragraph_index"] == para_idx)]
             if para.empty:
@@ -64,7 +62,7 @@ class BoWRecommender(BaseRecommender):
 
             if exclude:
                 self.filtered_data = data[
-                    ~((data["book_index"] == book_idx) & (data["paragraph_index"] == para_idx))
+                    (data["book_index"] != book_idx) | (data["paragraph_index"] != para_idx)
                 ]
             else:
                 self.filtered_data = data
@@ -73,7 +71,6 @@ class BoWRecommender(BaseRecommender):
         return self.vectorizer.transform([self.input_text])
 
     def get_doc_vectors(self):
-        # We already have the matrix for the full data
         return self.bow_matrix
 
     def compute_similarity(self, input_vec, doc_vec):

@@ -23,10 +23,10 @@ class BERTRecommender(BaseRecommender):
         pass
 
     # def load_model(self):
-    #     # Already initialized in __init__
     #     pass
 
     def prepare_input_and_filtered(self, data, book_idx, para_idx, exclude=True):
+        # filter descriptions
         if para_idx is None:
             book = data[data["book_index"] == book_idx]
             if book.empty:
@@ -39,6 +39,8 @@ class BERTRecommender(BaseRecommender):
             }
             self.filtered_data = data if not exclude else data[data["book_index"] != book_idx]
             self.filtered_data = self.filtered_data.drop_duplicates(subset=["description"]).reset_index(drop=True)
+        
+        # filter paragraphs
         else:
             para = data[(data["book_index"] == book_idx) & (data["paragraph_index"] == para_idx)]
             if para.empty:
@@ -64,29 +66,22 @@ class BERTRecommender(BaseRecommender):
         col = "text" if self.rec_type == "paragraph" else "description"
         texts = self.filtered_data[col].tolist()
         
-        print("🔄 Generating BERT embeddings for all documents...")
+        print("Generating BERT embeddings for all documents...")
         with tqdm(total=len(texts), desc="Encoding Texts (BERT)", unit="doc") as pbar:
-            # tqdm doesn't auto-update with SentenceTransformer.encode(), so we simulate it
             embeddings = self.model.encode(
                 texts,
                 convert_to_tensor=True,
                 show_progress_bar=False,
-                batch_size=32  # Optional: tune for your GPU
+                batch_size=32
             ).to(self.device)
             pbar.update(len(texts))
         
         return embeddings
 
-    # def compute_similarity(self, input_vector, doc_vector):
-    #     if np.linalg.norm(input_vector) == 0 or np.linalg.norm(doc_vector) == 0:
-    #         return 0.0
-    #     return float(np.dot(input_vector, doc_vector) / (np.linalg.norm(input_vector) * np.linalg.norm(doc_vector)))
-    
     # def compute_similarity(self, input_vec, doc_vec):
     #     return cosine_similarity(input_vec, doc_vec)[0, 0]
 
     def compute_similarity(self, input_vec, doc_vec):
-        # Use PyTorch cosine similarity to keep everything on GPU
         sim = torch_cosine(input_vec, doc_vec, dim=0)
         return sim.item()
         

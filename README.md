@@ -73,7 +73,8 @@ src/
 │   ├── fasttext_model.py     
 │   ├── glove_model.py        
 │   ├── lsa_model.py          
-│   └── bert_model.py         
+│   ├── bert_model.py
+|   └── e5_model.py        
 │
 ├── resource_tracking/        # Resource usage monitoring (memory, CPU, GPU)
 │   └── resource_tracker.py
@@ -85,41 +86,49 @@ src/
 │   ├── run_bow.py
 │   ├── ...
 │
-├── saved_models/             # Serialized model files (e.g., GloVe vectors)
+├── saved_models/             # Saved model files (e.g., GloVe vectors)
 │
 ├── evaluation.ipynb          # Jupyter Notebook for manual evaluation
-└── implementation.ipynb      # Implementation details and experimentation
+└── implementation.ipynb      # Jupyter Notebook for dataset preparation and development
 ```
-
+- the implementation notebook was used for preparing the dataset of book paragraphs and for developing the logic of recommendations and tracking
+- the final system is restructured to be able to run models separately and to support further development, integration of additional models, and expansion with more datasets 
+- some models have been added later to the new structure (e.g., E5)
 ---
 
 
-### Deployment
-![Deployment Diagram](img/deployment_diagram.png)
+### Components and Deployment
+![Deployment Diagram](img/component.png)
+![Deployment Diagram](img/deployment.png)
 <br>
 - **Google Cloud - Virtual Machine**  
 All experiments were executed on a Google Cloud virtual machine (`g2-standard-8`) with **8 vCPUs**, **32 GB RAM**, and **1× NVIDIA L4 GPU**. The VM environment allowed for efficient GPU-accelerated model execution and clean, uninterrupted **resource tracking** without relying on local hardware. This setup ensured reproducibility and enabled long-running experiments remotely.
 
----
-### Conceptual Proposal
-![Proposal](img/proposal.png)
 
 ---
 
 ### Models used:  
-- TF-IDF (Term Frequency–Inverse Document Frequency)
-- LSA (Latent Semantic Analysis)
-- BoW (Bag of Words)
-- FastText (Facebook's FastText Word Embeddings)
-- GloVe (Global Vectors for Word Representation)
-  - Pretrained 50-dimensional embeddings were used from the [GloVe project](https://nlp.stanford.edu/projects/glove/) trained on 6B tokens from Wikipedia and Gigaword. (add it to saved_models)
-- BERT (Bidirectional Encoder Representations from Transformers - Sentence-BERT variant)
+- TF-IDF - Term Frequency–Inverse Document Frequency
+  - TfidfVectorizer(stop_words="english", max_features=5000) 
+- LSA - Latent Semantic Analysis
+  - TfidfVectorizer(stop_words="english", max_features=5000) 
+  - TruncatedSVD(n_components=500, random_state=42)
+- BoW - Bag of Words
+  - CountVectorizer(stop_words="english") 
+- FastText - Facebook's FastText Word Embeddings
+  - FastText(vector_size=100, window=5, min_count=2, workers=4, epochs=20) 
+- GloVe - Global Vectors for Word Representation
+  - Pretrained 50-dimensional embeddings were used from the [GloVe project](https://nlp.stanford.edu/projects/glove/) trained on 6B tokens from Wikipedia and Gigaword. - to use, add it to saved_models - glove.6B.50d.txt
+- BERT - Bidirectional Encoder Representations from SentenceTransformers
+  - SentenceTransformer("all-MiniLM-L6-v2") 
+- E5 - Embedding-based Encoder for Information Retrieval from SentenceTransformers
+  - SentenceTransformer("intfloat/e5-base")
 
 
-### Datasets used:
-Book Descriptions - `datasets/book_details_clean.csv`<br>  
+### Examples of used datasets:
+Book Descriptions  
 ![Book Descriptions](img/rating_data_example.png)<br><br>
-Book Paragraphs - `datasets/paragraphs_limited_to_200_quarter.csv`<br>  
+Book Paragraphs  
 ![Book Paragraphs](img/paragraphs_example.png)<br>
 
 
@@ -164,8 +173,29 @@ Book Paragraphs - `datasets/paragraphs_limited_to_200_quarter.csv`<br>
 
 ---
 
-### Evaluation
-Results were evaluated manually in the `evaluation.ipynb` jupyter notebook
+### Evaluation and Visualization
+Results were evaluated manually in the `evaluation.ipynb` Jupyter notebook.
+
+The notebook focuses on both **quantitative** and **visual** evaluation of recommendation performance using a variety of metrics:
+
+- **Core evaluation metrics**:
+  - *Coverage* 
+  - *Confidence*
+  - *Similarity*
+  - *Diversity - variance*
+  - *Diversity - dissimilarity*
+  - *Popularity*
+  - *Novelty*
+  - *Execution Speed*
+  - *Resource Usage (CPU, GPU, Memory)*
+  
+- **Evaluation on results Metadata**:
+  - Goodreads dataset was used to see each models recommendations ratings (ratings, reviews, genres) 
+
+- **Visualization**:
+  - Radar plots to compare multi-metric performance across models
+
+All evaluations were computed post-execution using the saved recommendation outputs and tracked performance logs from the virtual machine.
 
 
 ---
@@ -208,13 +238,6 @@ To extend the system with a new text representation model, follow these steps:
 ---
 
 ### Models for Future Implementation:  
-- E5 (intfloat/e5-base, e5-mistral) | Transformer | Retrieval, similarity, question answering
-
-- GTR (T5 for retrieval) | T5 Encoder | Dense retrieval, semantic search
-
-- MPNet (all-mpnet-base-v2) | Transformer | Text similarity, clustering
-
-- MiniLM (all-MiniLM-L6-v2) | Lightweight BERT | Fast inference, general embeddings 
 
 - T5 (sentence-t5-base) | Text-to-text | General-purpose understanding
 

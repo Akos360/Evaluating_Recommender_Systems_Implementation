@@ -171,6 +171,8 @@ Book Paragraphs
    - Performance saved per run (`*_summary.csv`)
    - Training time logged in `training_times.csv`
 
+Here is the flow of the system: 
+![Flowchart](img/flow.png)
 ---
 
 ### Evaluation and Visualization
@@ -239,10 +241,8 @@ To extend the system with a new text representation model, follow these steps:
 
 ### Models for Future Implementation:  
 
-- T5 (sentence-t5-base) | Text-to-text | General-purpose understanding
+- T5 (sentence-t5-base) - text-to-text 
 
-- LaBSE | BERT variant | Multilingual semantic similarity
+- LaBSE (BERT variant) - multilingual 
 
-- Universal Sentence Encoder (USE) | Transformer (TensorFlow) | Semantic similarity, clustering
-
-- Contriever | Transformer (unsupervised) | General retrieval
+- Universal Sentence Encoder (USE) - transformer (tensorFlow)
